@@ -1,0 +1,2 @@
+python yolo_people_counter.py --video video.mp4 --fps 1 --show
+

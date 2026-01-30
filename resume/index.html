@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mehul Baid | Resume</title>
+<style>
+*{
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    color:#222;
+    transition:.3s;
+}
+
+/* ---------- DARK MODE ---------- */
+body.dark{
+    background:#0f172a;
+    color:#eee;
+}
+
+body.dark .container{ background:#1e293b; }
+body.dark .section{ background:#334155; }
+
+/* ---------- Container ---------- */
+.container{
+    max-width:1000px;
+    margin:30px auto;
+    padding:30px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 10px 35px rgba(0,0,0,0.15);
+}
+
+/* ---------- Header ---------- */
+header{
+    text-align:center;
+    padding-bottom:20px;
+    border-bottom:2px solid #e0e0e0;
+}
+
+header h1{
+    margin-bottom:5px;
+    font-size:34px;
+    color:#0d6efd;
+}
+
+header h3{
+    margin-top:0;
+    color:#555;
+}
+
+
+header img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #0d6efd;
+    margin-bottom:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ---------- Links ---------- */
+.contact a{
+    text-decoration:none;
+    color:#0d6efd;
+    font-weight:500;
+}
+
+.contact a:hover{
+    color:#084298;
+}
+
+/* ---------- Sections ---------- */
+.section{
+    margin-top:25px;
+    padding:18px;
+    background:#f8fbff;
+    border-radius:10px;
+    opacity:0;
+    transform:translateY(40px);
+    transition:.6s;
+    border-left:5px solid #0d6efd;
+}
+
+.section:nth-child(odd){
+    border-left-color:#20c997;
+}
+
+.section:nth-child(even){
+    border-left-color:#ffc107;
+}
+
+.section.visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.section h2{
+    margin-top:0;
+    color:#0d6efd;
+}
+
+/* ---------- Skills ---------- */
+.skills span{
+    display:inline-block;
+    background:linear-gradient(45deg,#0d6efd,#00c6ff);
+    color:white;
+    padding:6px 14px;
+    border-radius:20px;
+    margin:5px;
+    font-size:13px;
+    transform:scale(.8);
+    opacity:.6;
+    transition:.3s;
+}
+
+.skills span:hover{
+    transform:scale(1.1);
+}
+
+.skills span.show{
+    transform:scale(1);
+    opacity:1;
+}
+
+/* ---------- Button ---------- */
+button{
+    padding:10px 20px;
+    border:none;
+    background:linear-gradient(45deg,#198754,#20c997);
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* ---------- Scroll Progress ---------- */
+.progress{
+    position:fixed;
+    top:0;
+    left:0;
+    height:5px;
+    background:linear-gradient(90deg,#ff512f,#dd2476);
+    width:0%;
+    z-index:999;
+}
+
+/* ---------- Theme Button ---------- */
+.theme-btn{
+    position:fixed;
+    right:20px;
+    top:20px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+/* ---------- Footer ---------- */
+footer{
+    text-align:center;
+    margin-top:25px;
+    color:#666;
+}
+
+/* ---------- Print ---------- */
+@media print{
+    body{ background:white; }
+    .container{ box-shadow:none; }
+    button,.theme-btn,.progress{ display:none; }
+}
+</style>
+
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <img src="./profile.png" alt="">
+    <h1>Mehul Baid</h1>
+    <h3>B.Tech CSE | LNMIIT Jaipur</h3>
+
+    <div class="contact">
+        Email: <a href="mailto:mehulbaid14@gmail.com">mehulbaid14@gmail.com</a> |
+        Phone: 7073556722 <br>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/mehul-baid-257017333" target="_blank">
+        linkedin.com/in/mehul-baid
+        </a>
+    </div>
+</header>
+
+<div class="section">
+<h2>Education</h2>
+<p>
+B.Tech Computer Science Engineering<br>
+LNMIIT Jaipur (2024–2028)<br>
+SGPA: 8.02
+</p>
+</div>
+
+<div class="section">
+<h2>School Education</h2>
+
+<p><b>Senior Secondary (Class XII)</b><br>
+Beetles International School,Amer road,Jaipur <S></S>, Jaipur</p>
+
+<p><b>Secondary (Class X)</b><br>
+MPS International School, Tilak Nagar, Jaipur</p>
+
+</div>
+
+
+<div class="section">
+<h2>Technical Skills</h2>
+<div class="skills">
+<span>C++</span>
+<span>Python</span>
+<span>JavaScript</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>SQL</span>
+<span>DSA</span>
+<span>Git & GitHub</span>
+</div>
+</div>
+
+<div class="section">
+<h2>Projects</h2>
+<ul>
+<li>
+<b>Smart Campus Crowd Management</b><br>
+Tracks bus occupancy, mess crowd, and room availability.
+</li>
+
+<li>
+<b>Expense Tracker Web App</b><br>
+Track expenses using local storage .
+</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Coding Profiles</h2>
+<ul>
+<li>LeetCode – 265+ problems solved</li>
+<li>Strong DSA & Contest participation</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Certifications</h2>
+<ul>
+<li>Web Development Bootcamp</li>
+<li>Python Programming Course</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Hackathons</h2>
+<ul>
+<li>
+<b>Google GenAI Hackathon</b> – Participated and worked on AI-based solution development using Generative AI concepts.
+</li>
+
+<li>
+<b>AMD Slingshot Hackathon</b> – current working on yolo api-key and git & github Management.
+</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Proficiency in Languages</h2>
+<ul>
+<li>English – Professional Working Proficiency</li>
+<li>Hindi – Native Proficiency</li>
+<li>French – Basic Proficiency</li>
+</ul>
+</div>
+
+
+
+<div class="section">
+<h2>Download Resume</h2>
+<button onclick="window.print()">Download PDF</button>
+</div>
+
+
+<footer>
+<p>© 2026 Mehul Baid</p>
+</footer>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* -------- Typing Greeting -------- */
+    const greeting = document.createElement("div");
+    greeting.style.marginTop = "10px";
+
+    let text = "Welcome to my professional resume.";
+    let index = 0;
+
+    function typeEffect(){
+        if(index < text.length){
+            greeting.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeEffect,40);
+        }
+    }
+
+    document.querySelector("header").appendChild(greeting);
+    typeEffect();
+
+
+    /* -------- Theme Toggle -------- */
+    const themeBtn = document.createElement("button");
+    themeBtn.innerText = "🌙";
+    themeBtn.className = "theme-btn";
+    document.body.appendChild(themeBtn);
+
+    if(localStorage.getItem("theme")==="dark"){
+        document.body.classList.add("dark");
+        themeBtn.innerText="☀️";
+    }
+
+    themeBtn.onclick = () => {
+        document.body.classList.toggle("dark");
+        const dark = document.body.classList.contains("dark");
+        themeBtn.innerText = dark ? "☀️":"🌙";
+        localStorage.setItem("theme", dark ? "dark":"light");
+    };
+
+
+    /* -------- Scroll Progress -------- */
+    const progress = document.createElement("div");
+    progress.className = "progress";
+    document.body.appendChild(progress);
+
+    window.addEventListener("scroll", () => {
+        const totalHeight =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
+
+        const progressHeight =
+            (window.scrollY / totalHeight) * 100;
+
+        progress.style.width = progressHeight + "%";
+    });
+
+
+    /* -------- Section Animation -------- */
+    const sections = document.querySelectorAll(".section");
+
+    const observer = new IntersectionObserver(entries=>{
+        entries.forEach(entry=>{
+            if(entry.isIntersecting){
+                entry.target.classList.add("visible");
+
+                // animate skills
+                entry.target.querySelectorAll(".skills span")
+                .forEach((skill,i)=>{
+                    setTimeout(()=>{
+                        skill.classList.add("show");
+                    },i*100);
+                });
+
+                observer.unobserve(entry.target);
+            }
+        });
+    },{threshold:0.2});
+
+    sections.forEach(sec=>observer.observe(sec));
+
+});
+</script>
+
+
+
+</body>
+</html>
